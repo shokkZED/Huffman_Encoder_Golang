@@ -119,9 +119,9 @@ func encodeStringWithHuffman(s string, codes map[rune]string) string {
 func main() {
 	s := "aaaabbbccx"
 	codes := huffmanEncode(s)
-	fmt.Println("Коды символов:")
+	fmt.Println("Symbol codes:")
 	printHuffmanCodes(codes)
 
 	encoded := encodeStringWithHuffman(s, codes)
-	fmt.Println("\nСлитный код:", encoded)
+	fmt.Println("\nCode without spaces:", encoded)
 }
